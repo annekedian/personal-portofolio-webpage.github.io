@@ -1,0 +1,233 @@
+/* Basic Reset */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baskervville';
+}
+
+:root {
+  --lgc-top: linear-gradient(45deg, #fd868c, #ffe28a, #9fe6a0);
+  --lgc-bottom: linear-gradient(45deg, #582841, #f36f38, #f99e4c, #f36f38, #ef4648, #cc2a49);
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #cc2a49;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index:3;
+}
+
+/* Navbar Styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-align: right;
+}
+
+
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+  font-weight: bold;
+}
+
+nav > ul > li:hover {
+  background-color: #ef4648;
+  color: #dfdfe2;
+  cursor: pointer;
+  padding: auto;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* Welcome Section Styles */
+#welcome-section {
+  margin: 30px auto 10px auto;
+  padding: 100px;
+  text-align: center;
+  color: #f36f38;
+  font-weight: bold;
+  background: var(--lgc-top);
+}
+
+/* For screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+  #navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #navbar a {
+    padding: 10px; 
+    display: block;
+  }
+}
+
+h2{
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+
+/* Projects Section Styles */
+#projects {
+  padding: 20px;
+  color: #e1e1e1;
+  background-color: #582841;
+  margin-bottom: 20px;
+}
+
+.allprojects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1400px;
+  margin-bottom: 40px;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.allprojects a {
+  color: #e1e1e1;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.allprojects img {
+  padding-bottom: 15px;
+}
+
+.project1, .project2, .project3, .project4, .project5, .project6 {
+  background-color: #f99e4c;
+  padding-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.allprojects a {
+  position: relative;
+  color: #e1e1e1;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover {
+  transform: scale(1.1);
+}
+
+.allprojects a:hover{
+  color: #f36f38;
+}
+
+.social-icons {
+  display: grid;
+  font-size: 3rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  align-items: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #e1e1e1;
+}
+
+.social-icons a:hover{
+  transform: scale(1.3);
+}
+
+#contact {
+  background: var(--lgc-bottom);
+  color: linen;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.certification {
+  padding: 30px 40px 30px 40px;
+  text-align: justify;
+  border-bottom: 4px solid #dcdcdc;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.c1, .c2, .c3 {
+  color: #dcdcdc;
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  text-decoration: none;
+  transition: transform 0.3s;
+  padding-bottom: 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.c1{
+  padding-top: 25px;
+}
+
+.gradient-border {
+    position: relative;
+    padding-bottom: 10px;
+    text-align: center;
+    background-image: var(--lgc-bottom);
+    background-size: 50% 10px;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.gradient-border::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px; 
+    background-image: var(--lgc-bottom);
+    background-position: center top;
+    background-size: 50% 10px;
+    background-repeat: no-repeat;
+}
+
+.c1:hover, .c2:hover, .c3:hover{
+  color: var(--lgc-bottom);
+  transform: scale(1.3);
+}
