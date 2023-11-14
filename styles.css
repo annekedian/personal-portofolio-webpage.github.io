@@ -112,18 +112,44 @@ li > a {
   }
 }
 
-h2{
-  text-align: center;
-  text-decoration: underline;
-  padding-bottom: 20px;
-}
-
 /* Projects Section Styles */
 #projects {
   padding: 20px;
   color: #e1e1e1;
   background-color: #582841;
   margin-bottom: 20px;
+}
+
+h2{
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+
+.color-code {
+  display: flex;
+  flex-direction: row; /* Mengatur tata letak vertikal (column) */
+  justify-content: center;
+}
+
+.cb {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px; /* Jarak antara setiap kotak warna dan teks */
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.cc1 {
+  background-color: #f99e4c; /* warna merah */
+}
+
+.cc2 {
+  background-color: #ef4648; /* warna hijau */
+}
+
+.cc3 {
+  background-color: #1e2425; /* warna biru */
 }
 
 .allprojects {
@@ -137,6 +163,7 @@ h2{
   margin-bottom: 40px;
   padding: 20px 10px;
   text-align: center;
+  transition: transform 0.3s;
 }
 
 .allprojects a {
@@ -150,10 +177,19 @@ h2{
   padding-bottom: 15px;
 }
 
-.project1, .project2, .project3, .project4, .project5, .project6, .project7 {
+.p1{
   background-color: #f99e4c;
   padding-bottom: 20px;
-  transition: transform 0.3s;
+}
+
+.p2{
+  background-color: #ef4648;
+  padding-bottom: 20px;
+}
+
+.p3{
+  background-color: #1e2425;
+  padding-bottom: 20px;
 }
 
 .allprojects a {
@@ -164,12 +200,16 @@ h2{
   text-decoration: none;
 }
 
-.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover, .project7:hover {
+.p1:hover, .p2:hover, .p3:hover{
   transform: scale(1.1);
 }
 
-.allprojects a:hover{
+.p1 a:hover, .p3 a:hover{
   color: #f36f38;
+}
+
+.p2 a:hover{
+  color: #582841;
 }
 
 .social-icons {
