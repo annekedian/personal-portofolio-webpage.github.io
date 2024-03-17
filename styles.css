@@ -1,3 +1,5 @@
+
+
 /* Basic Reset */
 body, h1, h2, p {
   margin: 0;
@@ -6,14 +8,14 @@ body, h1, h2, p {
 }
 
 :root {
-  --lgc-top: linear-gradient(45deg, #fd868c, #ffe28a, #9fe6a0);
+  --lgc-top: linear-gradient(45deg, #ff847c, #fecea8, #99b898);
   --lgc-bottom: linear-gradient(45deg, #582841, #f36f38, #f99e4c, #f36f38, #ef4648, #cc2a49);
 }
 
 header {
   width: 100%;
   height: 50px;
-  background-color: #cc2a49;
+  background: var(--lgc-top);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,13 +56,14 @@ nav > ul > li {
   padding: 0.2rem;
   display: block;
   font-weight: bold;
+  transition: transform 0.3s;
 }
 
 nav > ul > li:hover {
-  background-color: #ef4648;
-  color: #dfdfe2;
+  color: #668365;
   cursor: pointer;
   padding: auto;
+  transform: scale(1.3);
 }
 
 li > a {
@@ -71,7 +74,7 @@ li > a {
 
 /* Welcome Section Styles */
 #welcome-section {
-  margin: 30px auto 10px auto;
+  margin: 30px auto 0px auto;
   padding: 100px;
   text-align: center;
   color: #f36f38;
@@ -115,9 +118,8 @@ li > a {
 /* Projects Section Styles */
 #projects {
   padding: 20px;
-  color: #e1e1e1;
-  background-color: #582841;
-  margin-bottom: 20px;
+  color: #ff847c;
+  background-color: linen;
 }
 
 h2{
@@ -128,14 +130,14 @@ h2{
 
 .color-code {
   display: flex;
-  flex-direction: row; /* Mengatur tata letak vertikal (column) */
+  flex-direction: row;
   justify-content: center;
 }
 
 .cb {
   width: 50px;
   height: 50px;
-  margin-bottom: 10px; /* Jarak antara setiap kotak warna dan teks */
+  margin-bottom: 10px;
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -212,82 +214,29 @@ h2{
   color: #582841;
 }
 
+
 .social-icons {
-  display: grid;
+  display: flex;
+  justify-content: center;
   font-size: 3rem;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+  gap: 50px;
   align-items: center;
 }
 
 .social-icons a {
   text-decoration: none;
-  color: #e1e1e1;
+  color: linen;
 }
 
-.social-icons a:hover{
-  transform: scale(1.3);
+.social-icons a:hover {
+  transform: scale(1.5);
+  color: #fc9544;
 }
 
-#profile-link {
-  background: var(--lgc-bottom);
+.contact {
+  background: var(--lgc-top);
   color: linen;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   text-align: center;
-}
-
-.certification {
-  padding: 30px 40px 30px 40px;
-  text-align: justify;
-  border-bottom: 4px solid #dcdcdc;
-  font-size: 28px;
-  font-weight: bold;
-  margin-right: 80px;
-  margin-left: 80px;
-}
-
-.c1, .c2, .c3 {
-  color: #dcdcdc;
-  display: flex;
-  justify-content: center;
-  font-style: normal;
-  text-decoration: none;
-  transition: transform 0.3s;
-  padding-bottom: 25px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.c1{
-  padding-top: 25px;
-}
-
-.gradient-border {
-    position: relative;
-    padding-bottom: 10px;
-    text-align: center;
-    background-image: var(--lgc-bottom);
-    background-size: 50% 10px;
-    background-position: center top;
-    background-repeat: no-repeat;
-}
-
-.gradient-border::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 10px; 
-    background-image: var(--lgc-bottom);
-    background-position: center top;
-    background-size: 50% 10px;
-    background-repeat: no-repeat;
-}
-
-.c1:hover, .c2:hover, .c3:hover{
-  color: var(--lgc-bottom);
-  transform: scale(1.3);
 }
