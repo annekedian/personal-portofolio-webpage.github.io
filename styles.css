@@ -203,6 +203,12 @@ h2{
   padding-bottom: 20px;
 }
 
+.p4 a {
+  color: rgba(11, 61, 145, 0.5); /* #0b3d91 with 50% opacity */
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .allprojects a {
   position: relative;
   color: #e1e1e1;
