@@ -154,6 +154,10 @@ h2{
   background-color: #1e2425; /* warna biru */
 }
 
+.cc4 {
+  background-color: #FFFFFF; /* warna biru */
+}
+
 .allprojects {
   display: flex;
   flex-direction: row;
@@ -194,6 +198,11 @@ h2{
   padding-bottom: 20px;
 }
 
+.p4{
+  background-color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
 .allprojects a {
   position: relative;
   color: #e1e1e1;
@@ -214,6 +223,9 @@ h2{
   color: #582841;
 }
 
+.p4 a:hover{
+  color: #0b3d91;
+}
 
 .social-icons {
   display: flex;
